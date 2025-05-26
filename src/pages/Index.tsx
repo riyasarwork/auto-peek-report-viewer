@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
@@ -6,6 +5,7 @@ import { Separator } from "@/components/ui/separator";
 import { CheckCircle, XCircle, AlertTriangle, Car, Calendar, MapPin, Gauge, Fuel, Users, Settings, Shield, FileText } from "lucide-react";
 import { PhotoGallery } from "@/components/PhotoGallery";
 import { InspectionSection } from "@/components/InspectionSection";
+import { CarDamageMap } from "@/components/CarDamageMap";
 
 const Index = () => {
   // Sample inspection data
@@ -216,6 +216,9 @@ const Index = () => {
             </p>
           </CardContent>
         </Card>
+
+        {/* Car Damage Map */}
+        <CarDamageMap />
 
         {/* Photo Gallery */}
         <div className="mb-8">
